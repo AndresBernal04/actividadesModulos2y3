@@ -2,34 +2,34 @@
     {
         "nombre": "Lamborghini aventador",
         "imagen": "https://i.pinimg.com/originals/4e/aa/d6/4eaad6399de8426a9480d9107bd2b54b.jpg",
-        "precio": 2900000000
+        "precio": "2900000000"
     },
 
 
     {
         "nombre": "Lamborghini huracan ",
         "imagen": "https://www.elcarrocolombiano.com/wp-content/uploads/2020/01/20200106-LAMBORGHINI-HURACAN-EVO-02-750x518.jpg",
-        "precio": "$2'600.00.000"
+        "precio": "2600000000"
     },
 
 
     {
         "nombre": "Lamborghini gallardo",
         "imagen": "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/masterpieces/gallardo-lp-570-4-superleggera-edizione-tecnica/refresh/gallardo-lp-570-4-superleggera-edizione-tecnica-HEADER.jpg",
-        "precio": "$1'300.000.000"
+        "precio": "1300000000"
     },
 
 
     {
         "nombre": "Lamborghini urus",
         "imagen": "https://images.ecestaticos.com/K6BI6HRG4CX0IhT11XAoD8gooX4=/0x0:2272x1425/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F8d8%2Fb5a%2F37f%2F8d8b5a37f80a1ed81489d38bb1b57f72.jpg",
-        "precio": "$2'000.000.000"
+        "precio": "2000000000"
     },
 
 
     {
         "nombre": "Lamborghini veneno",
         "imagen": "https://static.motor.es/fotos-noticias/2024/04/lamborghini-2024101358-1712338567_1.jpg",
-        "precio": "$2'400.000.000"
+        "precio": "2400000000"
     }
 ]

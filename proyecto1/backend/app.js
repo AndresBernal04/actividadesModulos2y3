@@ -22,6 +22,10 @@ const port = process.env.PORT;
 // conéctese a la base de datos
 connectionMongo();
 
+// middeleware -> intermediario entre el servidor y las peticiones
+// Para que se puedan leer y enviar datos en formato json
+app.use(express.json());
+
 // Usamos las rutas
 app.use("/", productsRouter);
 
