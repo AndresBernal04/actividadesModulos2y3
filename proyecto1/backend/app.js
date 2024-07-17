@@ -8,6 +8,7 @@ import dotenv from "dotenv";
 // Variables de entorno -> nos guardan información delicada o sensible
 import connectionMongo from "./config/db.js";
 import productsRouter from "./routes/products.routes.js";
+import cors from "cors"
 
 
 
@@ -25,6 +26,8 @@ connectionMongo();
 // middeleware -> intermediario entre el servidor y las peticiones
 // Para que se puedan leer y enviar datos en formato json
 app.use(express.json());
+app.use(cors());
+
 
 // Usamos las rutas
 app.use("/", productsRouter);

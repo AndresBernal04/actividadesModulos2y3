@@ -1,0 +1,12 @@
+
+/* Estilos de mi menú de navegación */
+
+.mi_lista{
+    border: solid 5px red;
+    font-size: 25px;
+    color: brown;
+    text-align: center;
+    display: flex;
+    gap: 50px;
+
+}
