@@ -7,8 +7,25 @@ import { userModel } from "../models/user.model.js"
 // función declarada -> función flecha
 
 export const postUser = async (request, response) => {
-    return response.send("Funciona la petición POST de los usuarios");
+    try {
+
+        // Esta línea de código es para crear usuarios
+        const newUser = await userModel.create(request.body) // necesitamos accerder al cuerpo de la petición con requets.body
+        return response.status(201).json({
+            estado: "201",
+            mensaje: "Usuario creado correctamente",
+            datos: newUser
+        })
+
+    } catch (error) {
+        return response.status(400).json({
+            estado: "400",
+            mensaje: "Ocurrió un problema al crear un usuario",
+            datos: error 
+        })
+    }
 }
+
 
 // Mostrar todos los usuarios
 export const getUsers = async (request, response) => {

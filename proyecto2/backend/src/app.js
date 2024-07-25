@@ -18,6 +18,8 @@ const port = process.env.PORT || 9000;
 // const port = process.env.PORT ? process.env.PORT : 6000;
 
 connectionMongo();
+// El use siempre se utiliza con middlewares
+app.use(express.json());
 app.use("/users", userRouter);
 app.use("/admin", adminRouter);
 
