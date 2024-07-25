@@ -1,5 +1,5 @@
 
-import {adminModel} from "../models.admin.model.js";
+import {adminModel} from "../models/admin.model.js";
 // Crear y mostrar todos, y eliminar
 
 

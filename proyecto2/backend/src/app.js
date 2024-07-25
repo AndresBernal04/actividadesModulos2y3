@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import { connectionMongo } from "./config/dataBase.js"; //Ponerle el .js después de dataBase
 import userRouter from "./routes/user.routes.js";
+import adminRouter from "./routes/admin.routes.js";
 
 // 2. Hacer las configuraciones necesarias en el proyecto
 const app = express();
@@ -18,6 +19,7 @@ const port = process.env.PORT || 9000;
 
 connectionMongo();
 app.use("/users", userRouter);
+app.use("/admin", adminRouter);
 
 // 3. Escuchar nuestro servidor para poder ejecutar el app
 app.listen(port, ()=>{

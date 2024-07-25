@@ -9,10 +9,7 @@ import { getUserById, getUsers, postUser, putUserById, deleteUserById } from "..
 // controller.deleteUserById
 // controller.postUser
 
-
-
-
-
+// Para que express sepa que lo voy a usar
 const userRouter = Router();
 
 // Son peticiones que vienen de métodos de express -> userRouter.get - userRouter.post, etc.
@@ -22,4 +19,4 @@ userRouter.post("/", postUser) //Ruta para crear usuarios
 userRouter.put("/:id", putUserById) //Ruta para actualizar usuario por id
 userRouter.delete("/:id", deleteUserById) //Ruta para eliminar usuario por id
 
-export default userRouter;
+export default userRouter; //Se exporta porque es quién contiene todas mis rutas
