@@ -10,6 +10,5 @@ const adminSchema = new mongoose.Schema({
     }
 });
 
-// mongoose -> método "discriminator" -> nos va a permitir crear un modelo de Admin a partir de otro modelo, User 
-
+// mongoose -> método "discriminator" -> nos va a permitir crear un modelo de Admin a partir de otro modelo, en este caso User 
 export const adminModel = userModel.discriminator("Admin", adminSchema)
