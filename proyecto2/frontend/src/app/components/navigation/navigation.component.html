@@ -60,12 +60,12 @@
 
 
   <!-- Formulario de Registro -->
-  <div *ngIf="isVisibleRegister">
-    <app-register [toggleLogin]="toggleLogin.bind(this)"></app-register>
+  <div *ngIf="isVisibleRegister" class="vw-100 vh-100 bg-dark bg-opacity-75 position-fixed top-0 start-0 d-flex justify-content-center align-items-center">
+    <app-register [toggleLogin]="toggleLogin.bind(this)" class="position-absolute"></app-register>
   </div>
 
 
   <!-- Formulario Ingreso -->
-  <div *ngIf="isVisibleLogin">
-    <app-login [toggleRegister]="toggleRegister.bind(this)"></app-login>
+  <div *ngIf="isVisibleLogin" class="vw-100 vh-100 bg-dark bg-opacity-75 position-fixed top-0 start-0 d-flex justify-content-center align-items-center">
+    <app-login [toggleRegister]="toggleRegister.bind(this)" class="position-absolute"></app-login>
   </div>
